@@ -7,20 +7,35 @@ import { NavbarComponent } from './core/components/navbar/navbar.component';
 import { CategoryListComponent } from './feauters/category/category-list/category-list.component';
 import { AddCategoryComponent } from './feauters/category/add-category/add-category.component';
 import { FormsModule } from '@angular/forms';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
+import { EditCategoryComponent } from './feauters/category/edit-category/edit-category.component';
+import { LoginComponent } from './feauters/auth/login/login.component';
+import { AuthInterceptor } from './core/interceptors/auth.interceptor';
+import { CarsComponent } from './feauters/Car/cars/cars.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     CategoryListComponent,
-    AddCategoryComponent
+    AddCategoryComponent,
+    EditCategoryComponent,
+    LoginComponent,
+    CarsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: AuthInterceptor,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

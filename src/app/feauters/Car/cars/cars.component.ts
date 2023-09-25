@@ -32,6 +32,7 @@ export class CarsComponent {
       next: (response) =>{
         this.discount=response.discount;
         this.cost=response.cost;
+        
       }
     });
   }

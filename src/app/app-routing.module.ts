@@ -5,6 +5,8 @@ import { AddCategoryComponent } from './feauters/category/add-category/add-categ
 import { EditCategoryComponent } from './feauters/category/edit-category/edit-category.component';
 import { LoginComponent } from './feauters/auth/login/login.component';
 import { CarsComponent } from './feauters/Car/cars/cars.component';
+import { CarfromComponent } from './feauters/bookcar/carfrom/carfrom.component';
+import { CarTransComponent } from './feauters/Carconfirm/car-trans/car-trans.component';
 
 const routes: Routes = [
   {
@@ -26,7 +28,16 @@ const routes: Routes = [
   {
     path: 'buycars',
     component: CarsComponent
+  },
+  {
+    path: 'bookcar',
+    component: CarfromComponent
+  },
+  {
+    path: 'bookcar/confirm',
+    component: CarTransComponent
   }
+
 ];
 
 @NgModule({

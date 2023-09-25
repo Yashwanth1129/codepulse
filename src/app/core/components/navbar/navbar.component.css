@@ -1,0 +1,72 @@
+/* Apply background and center the anchor link */
+body {
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.drivespark.com%2Fphotos%2Fporsche%2F&psig=AOvVaw3u42OcsygKC0wo-deItTlE&ust=1694009185831000&source=images&cd=vfe&opi=89978449&ved=0CA4QjRxqFwoTCLiy6YHak4EDFQAAAAAdAAAAABAI'); /* Specify the image path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh; /* Ensure the background covers the entire viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Style the anchor link */
+  .book-now-link {
+    font-size: 24px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #c28316;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  /* Change link color on hover */
+  .book-now-link:hover {
+    background-color: #89c7ed;
+  }
+  .car-rental-container {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .book-button {
+    font-size: 20px;
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .book-button:hover {
+    background-color: #0056b3;
+  }
+  .home-container {
+    background-image: url('https://wallpaperaccess.com/full/11207.jpg'); /* Replace with the actual path to your image */
+    background-size: cover; /* This ensures the image covers the entire container */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Fixed background for a parallax effect */
+    height: 100vh; /* Set the container height to the viewport height for a fullscreen effect */
+    /* Additional styling for your content within the container */
+    color: #d81d2c;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  
+  
+  

@@ -12,6 +12,8 @@ import { EditCategoryComponent } from './feauters/category/edit-category/edit-ca
 import { LoginComponent } from './feauters/auth/login/login.component';
 import { AuthInterceptor } from './core/interceptors/auth.interceptor';
 import { CarsComponent } from './feauters/Car/cars/cars.component';
+import { CarfromComponent } from './feauters/bookcar/carfrom/carfrom.component';
+import { CarTransComponent } from './feauters/Carconfirm/car-trans/car-trans.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { CarsComponent } from './feauters/Car/cars/cars.component';
     AddCategoryComponent,
     EditCategoryComponent,
     LoginComponent,
-    CarsComponent
+    CarsComponent,
+    CarfromComponent,
+    CarTransComponent
   ],
   imports: [
     BrowserModule,

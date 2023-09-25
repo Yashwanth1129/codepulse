@@ -55,12 +55,27 @@
   </div>
   
 </nav>
-<ng-container *ngIf="user !== undefined && user?.roles?.includes('Writer')">
+<!--<ng-container *ngIf="user !== undefined && user?.roles?.includes('Writer')">
   <div>
     <button type="button" [routerLink]="['buycars']">Click Me!</button>
 
   </div>
-</ng-container>
+</ng-container>-->
+<ng-container *ngIf="user !== undefined && user?.roles?.includes('Writer')">
+  
+  <div class="home-container">
+    <div class="car-rental-container">
+      <h1>Book a YASH Car Rental</h1>
+      <p>Explore our premium car rental options and hit the road in style.</p>
+      <button class="book-button" (click)="navigateToBookingPage()">Book Now</button>
+    </div>
+    
+    
 
+  </div>
+  
+
+  
+</ng-container>
 
 

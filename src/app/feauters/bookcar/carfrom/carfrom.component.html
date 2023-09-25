@@ -1,0 +1,37 @@
+<div class="home-container">
+    
+    
+    <section class="booking-form">
+      <h2>Book a Car</h2>
+      <form #form="ngForm" (submit)="submitBooking()">
+        <div class="form-group">
+          <label for="carModel">Car Model:</label>
+          <select id="carModel" name="carModel"  required>
+            <option value="car1">Car 1</option>
+            <option value="car2">Car 2</option>
+            <option value="car3">Car 3</option>
+            <!-- Add more car options as needed -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="pickupDate">Pickup Date:</label>
+          <input type="date" id="pickupDate" name="pickupDate" [(ngModel)]="model.pickupdate" required>
+        </div>
+        <div class="form-group">
+          <label for="returnDate">Return Date:</label>
+          <input type="date" id="returnDate" name="returnDate" [(ngModel)]="model.returndate" required>
+        </div>
+        <div class="form-group">
+          <label for="fullName">Full Name:</label>
+          <input type="text" id="fullName" name="fullName" [(ngModel)]="model.fullname" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" [(ngModel)]="model.email" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Book Now</button>
+      </form>
+    </section>
+  </div>
+ 
+  

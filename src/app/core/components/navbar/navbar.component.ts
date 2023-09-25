@@ -29,5 +29,9 @@ export class NavbarComponent implements OnInit{
     this.router.navigateByUrl('/');
 
   }
+  navigateToBookingPage()
+  {
+    this.router.navigate(['/bookcar']);
+  }
 
 }
